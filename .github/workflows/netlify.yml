@@ -24,8 +24,6 @@ jobs:
 
       - run: npm i
 
-      - run: npm run build
-
       - uses: jsmrcaga/action-netlify-deploy@v2.1.0
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.MY_AUTH_TOKEN }}
